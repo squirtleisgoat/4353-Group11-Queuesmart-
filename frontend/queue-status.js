@@ -9,7 +9,7 @@ simulateBtn.addEventListener("click", function() {
         position = position - 1;
         positionEl.textContent = position;
         if (position === 0) {
-            statusEl.textContent = "Served";
+            statusEl.textContent = "Good to go!";
         }
     }
 });
