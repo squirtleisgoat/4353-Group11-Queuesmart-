@@ -7,3 +7,16 @@ body {
 h1 {
     color: #1a56db;
 }
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 500px;
+}
+
+#position {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1a56db;
+}
