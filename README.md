@@ -1,2 +1,2 @@
-# 4353-Assignment-2
+# 4353-group11-queuesmart
 Group project
