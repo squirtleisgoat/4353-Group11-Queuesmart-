@@ -2,6 +2,7 @@ let position = 5;
 
 const positionEl = document.getElementById("position");
 const statusEl = document.getElementById("status");
+const waitTimeEl = document.getElementById("waitTime");
 const simulateBtn = document.getElementById("simulateBtn");
 
 function getNotified(message) {
@@ -18,6 +19,7 @@ simulateBtn.addEventListener("click", function() {
     if (position > 0) {
         position = position - 1;
         positionEl.textContent = position;
+        waitTimeEl.textContent = "~" + (position * 5) + " min";
         if (position === 0) {
             statusEl.textContent = "Good to go!";
             getNotified("It's your turn!")
