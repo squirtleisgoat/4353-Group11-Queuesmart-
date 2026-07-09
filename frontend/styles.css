@@ -19,4 +19,16 @@ h1 {
     font-size: 48px;
     font-weight: bold;
     color: #1a56db;
+    display: block;
+}
+
+.ticket {
+    text-align: center;
+}
+
+.ticket-label {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: gray;
 }
