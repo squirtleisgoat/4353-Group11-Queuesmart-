@@ -10,6 +10,8 @@ simulateBtn.addEventListener("click", function() {
         positionEl.textContent = position;
         if (position === 0) {
             statusEl.textContent = "Good to go!";
+        } else if (position <= 2) {
+            statusEl.textContent = "Not far away!";
         }
     }
 });
