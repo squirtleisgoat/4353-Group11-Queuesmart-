@@ -32,3 +32,13 @@ h1 {
     text-transform: uppercase;
     color: gray;
 }
+
+.notify {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #1a56db;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
