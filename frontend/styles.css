@@ -42,3 +42,17 @@ h1 {
     padding: 12px 20px;
     border-radius: 8px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
