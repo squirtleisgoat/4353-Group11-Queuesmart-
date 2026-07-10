@@ -1,7 +1,7 @@
 const history = [
     {date: "Jul 8, 2026", service: "General checkup", outcome: "Served" },
     {date: "Dec 14, 2025", service: "Lab work", outcome: "Left queue" },
-    {date: "Aug 20, 2025", service: "Pharmacy Pickup", outcome: "Served" },
+    {date: "Aug 20, 2025", service: "Pharmacy pickup", outcome: "Served" },
 ];
 
 const historyBody = document.getElementById("historyBody");
