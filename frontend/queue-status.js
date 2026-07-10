@@ -7,6 +7,9 @@ const waitTimeEl = document.getElementById("waitTime");
 const simulateBtn = document.getElementById("simulateBtn");
 
 function getNotified(message) {
+    const oldNotify = document.querySelector(".notify");
+    if (oldNotify) oldNotify.remove();
+    
     const notify = document.createElement("div")
     notify.className = "notify";
     notify.textContent = message;
