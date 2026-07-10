@@ -1,4 +1,5 @@
 let position = 5;
+let lastStatus = "waiting"; 
 
 const positionEl = document.getElementById("position");
 const statusEl = document.getElementById("status");
@@ -20,12 +21,19 @@ simulateBtn.addEventListener("click", function() {
         position = position - 1;
         positionEl.textContent = position;
         waitTimeEl.textContent = "~" + (position * 5) + " min";
+
         if (position === 0) {
-            statusEl.textContent = "Good to go!";
-            getNotified("It's your turn!")
-        } else if (position <= 2) {
-            statusEl.textContent = "Not far away!";
-            getNotified("Any second now!")
-        }
+            statusEl.textContent = "Served";
+            if (lastStatus !== "served") {
+                getNotified("It's your turn!");
+                lastStatus = "served";
+            }
+        } else if (position <=2) {
+            statusEl.textContent = "Almost ready";
+            if (lastStatus !== "almost") {
+                getNotified("Any second now!");
+                lastStatus = "almost";
+            }
+        }      
     }
 });
