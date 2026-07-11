@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QueueSmart - Join Queue</title>
+
+    <link rel="stylesheet" href="user-styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            QueueSmart
+        </div>
+
+        <div class="nav-links">
+            <a href="user-dashboard.html">Dashboard</a>
+            <a href="join-queue.html">Join Queue</a>
+            <a href="queue-status.html">Queue Status</a>
+            <a href="history.html">History</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
+
+    <main class="join-container">
+
+        <section class="page-heading">
+
+            <h1>Join a Queue</h1>
+
+            <p>
+                Select the service you would like to join.
+            </p>
+
+        </section>
+
+        <div id="messageBox" class="message-box"></div>
+
+        <section id="serviceList" class="service-grid">
+
+            <div class="service-card">
+
+                <h2>Academic Advising</h2>
+
+                <p>
+                    Speak with an academic advisor.
+                </p>
+
+                <p>
+                    <strong>5 people waiting</strong>
+                </p>
+
+                <p>
+                    Estimated wait: 25 minutes
+                </p>
+
+                <button
+                    class="join-button"
+                    data-service="Academic Advising"
+                    data-position="6"
+                    data-wait="30"
+                >
+                    Join Queue
+                </button>
+
+            </div>
+
+            <div class="service-card">
+
+                <h2>Financial Services</h2>
+
+                <p>
+                    Get assistance with billing and payments.
+                </p>
+
+                <p>
+                    <strong>3 people waiting</strong>
+                </p>
+
+                <p>
+                    Estimated wait: 15 minutes
+                </p>
+
+                <button
+                    class="join-button"
+                    data-service="Financial Services"
+                    data-position="4"
+                    data-wait="20"
+                >
+                    Join Queue
+                </button>
+
+            </div>
+
+            <div class="service-card">
+
+                <h2>Technical Support</h2>
+
+                <p>
+                    Receive help with technical issues.
+                </p>
+
+                <p>
+                    <strong>2 people waiting</strong>
+                </p>
+
+                <p>
+                    Estimated wait: 10 minutes
+                </p>
+
+                <button
+                    class="join-button"
+                    data-service="Technical Support"
+                    data-position="3"
+                    data-wait="15"
+                >
+                    Join Queue
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="join-queue.js"></script>
+
+</body>
+
+</html>

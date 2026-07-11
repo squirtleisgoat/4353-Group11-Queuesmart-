@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242424;
+    color: white;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #505c7c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+}
+
+.nav-logo {
+    color: #fdff00;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #fdff00;
+}
+
+.dashboard-container,
+.join-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.welcome-section,
+.page-heading {
+    margin-bottom: 30px;
+}
+
+.welcome-section h1,
+.page-heading h1 {
+    color: #fdff00;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p,
+.page-heading p {
+    color: #dddddd;
+    font-size: 18px;
+}
+
+.dashboard-grid,
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.dashboard-card,
+.service-card,
+.queue-summary {
+    background-color: #505c7c;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.dashboard-card h2,
+.service-card h2 {
+    color: #fdff00;
+    margin-bottom: 14px;
+}
+
+.dashboard-card p,
+.service-card p {
+    color: #eeeeee;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.dashboard-button {
+    display: inline-block;
+    background-color: #fdff00;
+    color: #282e3c;
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.dashboard-button:hover {
+    opacity: 0.9;
+}
+
+.join-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #fdff00;
+    color: #282e3c;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.join-button:hover {
+    opacity: 0.9;
+}
+
+.join-button:disabled {
+    background-color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+.current-queue-section {
+    margin-top: 40px;
+}
+
+.current-queue-section h2 {
+    color: #fdff00;
+    margin-bottom: 16px;
+}
+
+.active-queue h3 {
+    color: #fdff00;
+    margin-bottom: 15px;
+}
+
+.active-queue p {
+    margin-bottom: 10px;
+}
+
+.message-box {
+    display: none;
+    padding: 14px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    display: block;
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.error-message {
+    display: block;
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+@media screen and (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dashboard-grid,
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

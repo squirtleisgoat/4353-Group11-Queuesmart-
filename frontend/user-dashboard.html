@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QueueSmart - User Dashboard</title>
+
+    <link rel="stylesheet" href="user-styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            QueueSmart
+        </div>
+
+        <div class="nav-links">
+            <a href="user-dashboard.html">Dashboard</a>
+            <a href="join-queue.html">Join Queue</a>
+            <a href="queue-status.html">Queue Status</a>
+            <a href="history.html">History</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+
+        <section class="welcome-section">
+            <h1>Welcome to QueueSmart</h1>
+
+            <p>
+                Join a queue, check your current position,
+                and manage your waiting experience.
+            </p>
+        </section>
+
+        <section class="dashboard-grid">
+
+            <div class="dashboard-card">
+                <h2>Join a Queue</h2>
+
+                <p>
+                    Select an available service and join its queue.
+                </p>
+
+                <a class="dashboard-button" href="join-queue.html">
+                    Join Queue
+                </a>
+            </div>
+
+            <div class="dashboard-card">
+                <h2>Queue Status</h2>
+
+                <p>
+                    View your current queue position and estimated wait time.
+                </p>
+
+                <a class="dashboard-button" href="queue-status.html">
+                    View Status
+                </a>
+            </div>
+
+            <div class="dashboard-card">
+                <h2>Queue History</h2>
+
+                <p>
+                    View your previous QueueSmart activity.
+                </p>
+
+                <a class="dashboard-button" href="history.html">
+                    View History
+                </a>
+            </div>
+
+        </section>
+
+        <section class="current-queue-section">
+
+            <h2>Current Queue</h2>
+
+            <div id="currentQueue" class="queue-summary">
+
+                <p id="noQueueMessage">
+                    You are not currently in a queue.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="user-dashboard.js"></script>
+
+</body>
+
+</html>
