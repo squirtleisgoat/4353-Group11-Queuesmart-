@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueueSmart - Service Management</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <nav class="admin-nav">
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="service-management.html">Manage Services</a>
+        <a href="queue-management.html">Manage Queues</a>
+    </nav>
+    <div class="container admin-container">
+        <h1>Service Management</h1>
+        <h2>Create / Edit Service</h2>
+
+        <div id="service-error" class="error-box" style="display:none;"></div>
+        <div id="service-success" class="success-box" style="display:none;"></div>
+
+        <form id="serviceForm" onsubmit="event.preventDefault(); handleServiceSubmit();">
+            <div class="form-group">
+                <label>Service Name <span class="required">*</span></label>
+                <input type="text" id="serviceName" placeholder="Max 100 characters" maxlength="100" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Description <span class="required">*</span></label>
+                <textarea id="serviceDesc" placeholder="Enter service details" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Expected Duration (minutes) <span class="required">*</span></label>
+                <input type="number" id="serviceDuration" placeholder="e.g. 15" min="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Priority Level <span class="required">*</span></label>
+                <select id="servicePriority" required>
+                    <option value="">-- Select Priority --</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            
+            <button type="submit">Save Service</button>
+        </form>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

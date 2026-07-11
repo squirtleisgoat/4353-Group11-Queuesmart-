@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueueSmart - Queue Management</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <nav class="admin-nav">
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="service-management.html">Manage Services</a>
+        <a href="queue-management.html">Manage Queues</a>
+    </nav>
+    <div class="container admin-container">
+        <h1>Queue Management</h1>
+        
+        <div class="form-group">
+            <label>Select Service</label>
+            <select id="queueSelect" onchange="loadQueue()">
+                <option value="general">General Checkup</option>
+                <option value="financial">Financial Aid</option>
+            </select>
+        </div>
+
+        <button onclick="serveNextUser()" style="margin-bottom: 20px;">Serve Next User</button>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>User Name</th>
+                    <th>Manage</th>
+                </tr>
+            </thead>
+            <tbody id="queueBody">
+                <!-- Populated via admin.js -->
+            </tbody>
+        </table>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
