@@ -4,7 +4,7 @@ const {
   listServices,
   estimateWaitTime,
   clearServices,
-} = require("../services");
+} = require("./services-sm");
 
 beforeEach(() => {
   clearServices();
